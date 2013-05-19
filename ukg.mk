@@ -2,19 +2,19 @@
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/ukg/config/common.mk)
 
 # Inherit CDMA common stuff
-$(call inherit-product, vendor/aosp/config/cdma.mk)
+$(call inherit-product, vendor/ukg/config/cdma.mk)
 
 # Inherit Tuna common stuff
-$(call inherit-product, vendor/aosp/config/tuna.mk)
+$(call inherit-product, vendor/ukg/config/tuna.mk)
 
 # Toro Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/ukg/overlay/tuna
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xylon_toro
+PRODUCT_NAME := ukg_toro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
